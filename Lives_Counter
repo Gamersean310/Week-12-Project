@@ -15,6 +15,9 @@ private Sprite[] LivesArray;
 [SerializeField]
 private Image Lives;
 
+[SerializeField]
+private Text coins;
+
 	void Start()
 	{
 		
@@ -30,6 +33,10 @@ private Image Lives;
 			Lives.sprite = LivesArray[currentLives];
 		}
 		
+	public void UpdateCoinDisplay(int coins)
+	{
+		coins.text = "Coins: " + coins.ToString();
+	}
 		
 
 	
