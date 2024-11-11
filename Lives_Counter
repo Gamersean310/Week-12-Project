@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using JetBrains.Annotations;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+
+public class  UIManagement: MonoBehaviour
+{
+	
+[SerializeField]
+private Sprite[] LivesArray;
+
+[SerializeField]
+private Image Lives;
+
+	void Start()
+	{
+		
+	}
+	
+	void Update()
+	{
+		
+	}
+	
+	public void updateLives(int currentLives)
+		{
+			Lives.sprite = LivesArray[currentLives];
+		}
+		
+		
+
+	
+}
