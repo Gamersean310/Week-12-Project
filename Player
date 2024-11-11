@@ -63,4 +63,16 @@ public class Player : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+	
+	
+	public void AddCoin()
+	{
+		coins++;
+		LivesCounter.UpdateCoinDisplay(coins);
+	}
+	
+	
+	
+	
+	
 }
